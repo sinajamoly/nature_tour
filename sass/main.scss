@@ -1,0 +1,27 @@
+@import "base/bass";
+@import "base/utilities";
+@import "base/typography";
+@import "base/animation";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "pages/home";
+
+//COMPONENT------------------------------------------------------
+@import "components/button";
+//lAYOUTS
+@import "layout/header";
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+
