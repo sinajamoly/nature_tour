@@ -1,18 +1,24 @@
+
+@import "abstracts/variables";
+//BASE/////////////////
+@import "base/typography";
 @import "base/bass";
 @import "base/utilities";
-@import "base/typography";
 @import "base/animation";
 
+
+//ABSTRACT
 @import "abstracts/functions";
 @import "abstracts/mixins";
-@import "abstracts/variables";
-
+//PAGES
 @import "pages/home";
 
 //COMPONENT------------------------------------------------------
 @import "components/button";
 //lAYOUTS
 @import "layout/header";
+@import "layout/grid";
+
 
 /*
 COLORS:
