@@ -603,11 +603,15 @@ body {
 
 .header {
   height: 95vh;
+  margin-bottom: 5rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 0 100%, 100% 85vh, 100% 0); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -628,6 +632,13 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.5em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.5em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -636,6 +647,13 @@ body {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.5em) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.5em) {
+      .row [class^='col-'] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
@@ -653,6 +671,9 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.5em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -663,6 +684,10 @@ body {
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.5em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -682,6 +707,10 @@ body {
   .footer_copyright {
     border-top: 1px solid #999;
     padding-top: 2rem; }
+    @media (max-width: 56.5em) {
+      .footer_copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation__checkbox {
   display: none; }
@@ -698,6 +727,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.5em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__background {
   z-index: 10000;
@@ -709,6 +746,10 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  @media (max-width: 56.5em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
 
 .navigation__nav {
   height: 100vh;
